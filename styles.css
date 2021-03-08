@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(252, 228, 232);
+    margin:0;
+    padding:0px;
+}
+
+header{
+    background-color: rgb(228, 46, 213);
+    background-image: url("backg.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 300px;
+    
+    
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    
+}
+
+nav li{
+   
+    color: rgb(202, 130, 130);
+    margin: auto;
+    width: 100px;
+
+}
+
+nav li:not(#non)
+{
+    background-color: white;
+    border-radius: 7px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+header .logo {
+
+    background-image: url("logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 165px;
+    width: 120px;
+    position: relative;
+    top: 30px;
+    text-indent: -9999999px;
+   
+}
+
+
+@media screen and (min-width: 650px)
+{
+
+    nav li:not(#non) a :hover{
+
+        background-color:black;
+        color: blanchedalmond;
+        border-radius: 7px;
+        display: inline-block;
+        width: 100px;
+    
+     }
+ 
+
+}
+
+.feature {
+
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.feature figure{
+
+    margin: auto;
+    width: 200px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.feature figure img{
+    border: 0.5px solid black;
+    width: 120px;
+    border-radius: 30%;
+    box-shadow: grey 0 0 10px;
+}
+
